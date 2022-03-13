@@ -4,12 +4,12 @@
 # Saved for posterity by CryptoDragonLady
 version='1.2'
 rick='https://raw.githubusercontent.com/CryptoDragonLady/rickrollrc/blob/master'
-video="$rick/astley80.full.bz2"
+video="$rick/astley80.full.bz2?raw=true"
 # TODO: I'll let someone with mac or windows machine send a pull request
 # to get gsm going again :)
-audio_gsm="$rick/roll.gsm"
-audio_raw="$rick/roll.s16"
-audio_mp3="$rick/roll.mp3"
+audio_gsm="$rick/roll.gsm?raw=true"
+audio_raw="$rick/roll.s16?raw=true"
+audio_mp3="$rick/roll.mp3?raw=true"
 audpid=0
 NEVER_GONNA='curl -s -L http://bit.ly/10hA8iC | bash'
 MAKE_YOU_CRY="$HOME/.bashrc"
