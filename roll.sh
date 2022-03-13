@@ -61,7 +61,7 @@ echo -en "\x1b[?25l \x1b[2J \x1b[H"  # Hide cursor, clear screen.
 #echo -e "${yell}Fetching audio..."
 if has? afplay; then
   # On Mac OS, if |afplay| available, pre-fetch compressed audio.
-  [ -f /tmp/roll.s16 ] || obtainium $audio_mp3 >/tmp/roll.mp3
+  [ -f /tmp/roll.mp3 ] || obtainium $audio_mp3 >/tmp/roll.mp3
   afplay /tmp/roll.mp3 &
 elif has? aplay; then
   # On Linux, if |aplay| available, stream raw sound.
